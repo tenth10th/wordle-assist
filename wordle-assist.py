@@ -15,8 +15,11 @@ def wordle_assist(possible_words):
     starting_word_count = len(possible_words)
     print(f"Starting with {starting_word_count:,} possible 5-letter words:")
 
-    print(", ".join(possible_words))
+    # TODO
+    # Filter the list of possible_words here?
+    # (using Green/Yellow/Gray hint data from a game of Wordle)
 
+    print(", ".join(possible_words))
     ending_word_count = len(possible_words)
     decrease = starting_word_count - ending_word_count
     decrease_percent = round((decrease / starting_word_count) * 100, 2) if decrease else decrease

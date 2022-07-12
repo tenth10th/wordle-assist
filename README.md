@@ -48,8 +48,8 @@ Your job is to create some sort of data structure(s) that we can use to represen
 
 ## Initial Implementation
 
-The `index.js` file can load the initial list of 5,787 five-letter words, and has a spot indicated (on line 12) where you could apply filtering based on feedback from a game of Wordle. (You could hardcode that data, or define it in a constant in the file, or even write a parser to accept it on the command line!)
+The `wordle-assist.py` file can load the initial list of 5,787 five-letter words, and has a spot indicated (on line 18) where you could apply filtering based on feedback from a game of Wordle. (You could hardcode that data, or define it in a constant in the file, or even write a parser to accept it on the command line!)
 
-Running `node index.js` will initially load the words, count them, and print them, followed by a summary.
+Running `python wordle-assist.py` will initially load the words, count them, and print them, followed by a summary.
 
 I recommend sites like [Wordle History](https://lookleft.github.io/wordle-history/?challenge=23) as a source of additional (past) Wordle games to test your code against, though be prepared to find a new one in the event that they are taken down by lawsuits...
