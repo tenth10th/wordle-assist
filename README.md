@@ -2,11 +2,17 @@
 
 Wordle is a popular word-guessing game, inspired by the classic "Bulls and Cows", but using five letter english words as the secret codes.
 
+## Initial Setup
+
+Setup should occur automatically if you open this repo in GitPod!
+
+This script has no dependencies aside from Python 3.8, but the included Pipfile / requirements.txt will install `flake8` for linting and `pytest` for testing, though these are not specifically required. (Using Pipfile, `pipenv install`, or in plain Python, `pip install -r requirements.txt`)
+
 ## Cheating at Wordle
 
 Cheating at Wordle is... not very fun.
 
-Since Wordle is designed as a self-contained, client-side JavaScript application, it is possible to extract the list of possible answers, and even to determine which answer is correct for a given day.
+Since Wordle is designed as a self-contained, client-side JavaScript application, it is possible to extract the list of possible answers, and even to determine which answer is correct for a given day...
 
 This is sort of an interesting reverse-engineering challenge, but completely defeats the point - You don't need to play the game, or even think about the problem space to win every time.
 
@@ -40,3 +46,10 @@ Your job is to create some sort of data structure(s) that we can use to represen
 
 * Yellow letters effectively tell us two things: 1> The yellow letter must appear somewhere in the secret word, and 2> The yellow letter must NOT appear in the position it currently has in the guess...
 
+## Initial Implementation
+
+The `index.js` file can load the initial list of 5,787 five-letter words, and has a spot indicated (on line 12) where you could apply filtering based on feedback from a game of Wordle. (You could hardcode that data, or define it in a constant in the file, or even write a parser to accept it on the command line!)
+
+Running `node index.js` will initially load the words, count them, and print them, followed by a summary.
+
+I recommend sites like [Wordle History](https://lookleft.github.io/wordle-history/?challenge=23) as a source of additional (past) Wordle games to test your code against, though be prepared to find a new one in the event that they are taken down by lawsuits...

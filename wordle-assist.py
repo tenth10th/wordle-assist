@@ -15,6 +15,10 @@ def wordle_assist(possible_words):
     starting_word_count = len(possible_words)
     print(f"Starting with {starting_word_count:,} possible 5-letter words:")
 
+    # TODO
+    # Add some code and/or data to filter down the list of possible_words
+    # (Based on green/yellow/gray feedback from a game of Wordle)
+
     print(", ".join(possible_words))
 
     ending_word_count = len(possible_words)
